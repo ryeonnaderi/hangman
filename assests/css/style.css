@@ -1,0 +1,27 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+
+    background-image: url("https://2static.fjcdn.com/pictures/Rick+and+morty+wallpapers+quick+disclaimer+i+didnt+make+any_e995f5_5964659.jpg");
+   background-size: 100%;
+   
+}
+
+#box
+{
+    color: red;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+#title
+{
+    text-align: center;
+}
+
+
