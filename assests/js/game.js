@@ -10,12 +10,22 @@ var Word = randomWord();
 console.log(Word);
 
 var lives =5;
+var spaces = [];
 
 for (i = 0; i <= Word.length; i++) 
 { 
-    text i ="-";
+    spaces[i] ="-";
 }
+var wordSpaces = Word.length;
+
+console.log(wordSpaces);
 console.log(spaces);
-// user has to pck a letter that corresponds to a letter from the word 
-// if the letter is right, then it get placed on one of the line
-//if they get it wrong, then they lose one of thier lives and when they lose all 6 lives, then game over 
+
+
+var answer =[];
+
+for (var i = 0; i <Word.length; i++)
+{
+    answer[i] = Word.charAt(i);
+    console.log(answer);
+}
