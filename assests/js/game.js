@@ -29,3 +29,12 @@ for (var i = 0; i <Word.length; i++)
     answer[i] = Word.charAt(i);
     console.log(answer);
 }
+    
+document.onkeyup = function(event)
+{
+    e = e|| window.event;
+    var input = e.input;
+    // character = string.fromCharcode(charcode)
+
+    console.log(charcode);
+}  
