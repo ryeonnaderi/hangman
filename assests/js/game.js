@@ -1,3 +1,9 @@
+// variables
+var win = 0;
+var loss = 0;
+var lives = 5;
+
+
 //a word is made
 var wordList = ["summer","citadel of ricks","morty","jerry","beth","portal gun","wubba lubba dub dub","peace among worlds", "get schwift", "awwww geeez", "gazorpazorpfield","anatomy park","mr meseeks", "tiny rick","pickle rick"]
 // random word is choosen
@@ -14,40 +20,29 @@ var spaces = [];
 
 for (i = 0; i <= Word.length; i++) 
 { 
-    spaces[i] ="-";
+    spaces[i] ="_";
 }
 var wordSpaces = Word.length;
 
-console.log(wordSpaces);
 console.log(spaces);
 
+// get user guess
 
-var answer =[];
-
-for (var i = 0; i <Word.length; i++)
-{
-    answer[i] = Word.charAt(i);
-    
-    console.log(answer);
-}
-   
-// keyboard prints letters being pressed 
 document.onkeyup = function(event)
 {
-    e = e|| window.event;
-    var input = e.input;
-    character = string.fromCharcode(charcode)
-
-    console.log(charcode);
+    var keyCode = event.keyCode;
+    var keyWord = String.fromCharCode(keyCode);
+    console.log(keyWord);
 }
 
-// created lives
-var lives =5;
-// if they miss a letter
-if (input = word.charAt)
-{
-    lives--;
-    // console.log(lives);
-}
+//var answer =[];
+
+// for (var i = 0; i <Word.length; i++)
+// {
+//     answer[i] = Word.charAt(i);
+    
+//     // console.log(answer);
+// }
+   
 
 
