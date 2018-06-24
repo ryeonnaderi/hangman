@@ -33,6 +33,7 @@ document.onkeyup = function(event)
     var keyCode = event.keyCode;
     var keyWord = String.fromCharCode(keyCode);
     console.log(keyWord);
+    
 }
 
 //var answer =[];
