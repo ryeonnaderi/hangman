@@ -2,6 +2,7 @@
 var win = 0;
 var loss = 0;
 var lives = 5;
+var lettersUsed =[];
 
 
 //a word is made
@@ -32,18 +33,21 @@ document.onkeyup = function(event)
 {
     var keyCode = event.keyCode;
     var keyWord = String.fromCharCode(keyCode);
-    console.log(keyWord);
+   
+// if users guess is right
+   if(keyWord.indexof(keyWord) >-1)
+    {
+        lettersUsed.push(keyWord);
+    }
+    else 
+    {
+        letterUsed.push(keyWord);
+    }
     
 }
 
-//var answer =[];
 
-// for (var i = 0; i <Word.length; i++)
-// {
-//     answer[i] = Word.charAt(i);
-    
-//     // console.log(answer);
-// }
-   
+
+
 
 
