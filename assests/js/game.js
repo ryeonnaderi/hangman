@@ -5,17 +5,22 @@ var guesses =6;
 var input =[];
 var correctGuess = -1;
 
+
+function gameStart()
+{
+    var lettersguessed = [];
+
 // randomizing the word
 var wordList = ["summer","morty","jerry","beth", "rick"]
 
  randomWord = wordList[Math.floor(Math.random() * wordList.length)]
- console.log (randomWord);
+//  console.log (randomWord);
 
 //  creating the spaces for the letters 
     var answerDisplay = [];
  for (i = 0; i < randomWord.length; i++) 
 {
-answerDisplay[i] = "_";
+answerDisplay[i] = "-";
 }
 var spaces = randomWord.length;
 console.log (answerDisplay);
@@ -32,6 +37,7 @@ document.onkeyup = function(event)
     input ==="j"|| input ==="k"||  input ==="l"|| input ==="m" || input ==="n"|| input ==="o"|| input ==="p" || input ==="q"|| input ==="r" ||
     input ==="s"|| input ==="t"|| input ==="u" || input ==="v" || input ==="w" || input ==="x" || input ==="y" || input ==="z")
     {
+        lettersguessed.push(input);
         for (k = 0; k < randomWord.length; k++)  
         {
             if (input == randomWordLetters [k])
@@ -53,106 +59,22 @@ document.onkeyup = function(event)
         else if(correctGuess < 0)
         {
             guesses--;
-            console.log(guesses);
+
+            
         }
         
-      
+            
     }
+    document.getElementById("lettersguessed").innerHTML = lettersguessed.join("");
+        document.getElementById("win").innerHTML = win;
+        document.getElementById("loss").innerHTML = loss;
+        document.getElementById("guesses").innerHTML = guesses;
+        document.getElementById("answerDisplay").innerHTML = answerDisplay.join(" ");
 }
+document.getElementById("lettersguessed").innerHTML = lettersguessed.join("");
+document.getElementById("win").innerHTML = win;
+document.getElementById("loss").innerHTML = loss;
+document.getElementById("guesses").innerHTML = guesses;
+document.getElementById("answerDisplay").innerHTML = answerDisplay.join(" ");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function startgame()
-// {
-
-// }
-// //a word is made
-// var wordList = ["summer","morty","jerry","beth", "rick"]
-// // random word is choosen
-// var randomWord =function()
-// {
-//     return wordList[Math.floor(Math.random() * wordList.length)]
-
-//     // word are being split into letters
-//      WordArray = Word.split("");
-// };
-
-// // created array from word
-// var Word = randomWord();
-
-// console.log(Word);
-// // create for loop with an if statement and checks if user guess is in the array
-
-    
-//  for (var k = 0; k < WordArray.length; k++)
-//  {
-//      if(keyWord = WordArray)
-//      {
-
-//      }
-//  }
-// // the spaces are made 
-// var spaces = [];
-
-// for (i = 0; i < Word.length; i++) 
-// { 
-//     spaces[i] ="_";
-// }
-// var wordSpaces = Word.length;
-
-// console.log(spaces);
-
-// // get user guess
-
-// document.onkeyup = function(event)
-// {
-//      var keyCode = event.keyCode;
-//     var keyWord = String.fromCharCode(keyCode);
-//     console.log(keyWord);
-   
-// // if users guess is right
-// //    if(keyWord.indexof(keyWord) >-1)
-// //     {
-// //         lettersUsed.push(keyWord);
-// //     }
-// //     else 
-// //     {
-// //         letterUsed.push(keyWord);
-// //     }
-    
-// }
+}
