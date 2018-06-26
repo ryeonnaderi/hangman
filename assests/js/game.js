@@ -41,14 +41,14 @@ function gameStart() {
                     spaces--;
                     console.log(spaces);
                     correctGuess++;
+                    
                 }
                 console.log(answerDisplay);
 
             }
             if (correctGuess >= 0) {
                 guesses = guesses;
-                correctGuess = -1;
-                win++;
+                
 
             }
             else if (correctGuess < 0) {
