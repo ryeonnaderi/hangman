@@ -6,8 +6,9 @@
 body
 {
 
-    background-image: url("https://2static.fjcdn.com/pictures/Rick+and+morty+wallpapers+quick+disclaimer+i+didnt+make+any_e995f5_5964659.jpg");
+    background-image: url("https://img00.deviantart.net/c24a/i/2017/190/5/9/rick_and_morty_figures__black_background_by_acey13-dbfqmir.jpg");
    background-size: 100%;
+   
    
 }
 
@@ -22,6 +23,24 @@ body
 #title
 {
     text-align: center;
+}
+.letters
+{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+#answerDisplay
+{
+    color: red;
+}
+#lettersguessed
+{
+    color: red;
+}
+#guesses
+{
+    color: red;
 }
 
 
