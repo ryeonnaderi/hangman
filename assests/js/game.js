@@ -63,9 +63,7 @@ function gameStart() {
                 loss++;
 
             }
-            if (randomWordLetters.length === input.length) {
-                win++;
-            }
+            
 
 
         }
